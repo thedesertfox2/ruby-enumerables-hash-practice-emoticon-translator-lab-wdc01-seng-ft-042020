@@ -15,11 +15,16 @@ def load_library(path)
       }
     end
   end
+<<<<<<< HEAD
   final
+=======
+  p final
+>>>>>>> d4cffbfd4cf59947d0bc7eb32529153d4da30f35
 end
   
 
 
+<<<<<<< HEAD
 
 
 
@@ -57,3 +62,28 @@ end
 
 
 
+=======
+def get_japanese_emoticon(path, emoticon)
+  # code goes here
+  library = YAML.load_file(path).to_hash
+  final = {}
+  library.each do |emoticon, language|
+    language.each do |x|
+      if x == emoticon
+        final[emoticon][:japanese][1] = meaning[0]
+      else
+        puts ""
+        
+      }
+    end
+  end
+  p final
+end
+
+def get_english_meaning(path, japanese_emoticon)
+  # code goes here
+  library = YAML.load_file(path).to_hash
+  final = {}
+  p final
+end
+>>>>>>> d4cffbfd4cf59947d0bc7eb32529153d4da30f35
